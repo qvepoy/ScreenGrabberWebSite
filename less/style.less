@@ -1,0 +1,86 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic";
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+
+@import "../material/less/_colors.less";
+
+@white:        #ffffff;
+@black:        #000000;
+@light:        #f8f8f8;
+@gray:         #eeeeee;
+@darkgray:     #dddddd;
+
+
+@black83: fade(@black,83%);
+@white83: fade(@white,83%);
+
+@primary:      @blue-900;
+@secondary:    @red-900;
+
+@primary_2:         lighten(@primary, 10%);
+@primary_3:         lighten(@primary, 20%);
+@primary_4:         lighten(@primary, 25%);
+@primary_5:         lighten(@primary, 30%);
+@primary_-1:        darken(@primary, 5%);
+@primary_-2:        darken(@primary, 10%);
+@primary_-3:        darken(@primary, 15%);
+@primary_-4:        darken(@primary, 18%);
+@primary_-5:        darken(@primary, 22%);
+
+@secondary_2:       lighten(@secondary, 10%);
+@secondary_3:       lighten(@secondary, 20%);
+@secondary_4:       lighten(@secondary, 25%);
+@secondary_5:       lighten(@secondary, 30%);
+@secondary_-1:      darken(@secondary, 5%);
+@secondary_-2:      darken(@secondary, 10%);
+@secondary_-3:      darken(@secondary, 15%);
+@secondary_-4:      darken(@secondary, 18%);
+@secondary_-5:      darken(@secondary, 22%);
+
+//SCreenGrab
+@mainfont: 'Open Sans', sans-serif;
+@transpa: rgba(156, 155, 160, 0.1);
+@gun-powder: #474855;
+@mariner: #3C63A9;
+@hemp: #998177;
+@sitename: #8cd5ea;
+@picton: #2abcd8;
+//@picton-blue: #60A6D0;
+@air-force-blue: #668FB2;
+@santas-grey: #9C9BA0;
+
+
+@import "reset.less";
+@import "anicollection.less";
+@import "lesshat.less";
+@import "shadows.less";
+@import "snackbar.less";
+
+
+a:focus {
+    outline: none!important;
+}
+
+.modal-backdrop {
+    background-color: @black
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased!important;
+    background-color: @white;
+}
+
+.cd {
+    background-color: wheat;
+    //margin: 10px;
+
+}
+
+@import "index.less";
